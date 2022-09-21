@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block content%}
+<h1>This is the Client Page</h1>
+<textarea
+  readonly
+  id="textarea"
+  style="margin: 10px"
+  rows="10"
+  cols="50"
+  placeholder="type and send "
+>
+{{message}}</textarea
+>
+<form action="#" method="POST" onsubmit="myfunc()">
+  <label>Enter</label>
+  <input type="text" name="message" id="mess" />
+  <input type="submit" />
+</form>
+{%endblock%}
